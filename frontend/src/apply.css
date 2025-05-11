@@ -1,0 +1,95 @@
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #343a62;
+  margin: 0;
+  padding-top: 10px;
+  margin-top: 50px;
+}
+
+nav {
+  margin-bottom: 200px; /* Space between navigation bar and apply-page */
+
+}
+
+.apply-page {
+  max-width: 400px; /* Further reduced max-width for compactness */
+  margin: 60px auto; /* Increased space above and below the form */
+  padding: 25px; /* Adjusted padding for more space inside */
+  background: #8bdeed;
+  border-radius: 6px; /* Reduced border radius */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  position: relative; /* Ensure it's positioned correctly */
+  z-index: 1; /* Ensure it's above other elements */
+  display: flex;
+  flex-direction: column;
+
+}
+
+.apply-page h2 {
+  text-align: center;
+  margin-bottom: 15px; /* Reduced margin below heading */
+  color: #020202;
+  font-size: 18px; /* Adjusted font size */
+}
+
+.apply-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group {
+  margin-bottom: 12px; /* Reduced space between form groups */
+}
+
+.form-group label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 4px; /* Reduced margin below label */
+  color: #080808;
+  font-size: 12px; /* Reduced font size */
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 6px; /* Reduced padding */
+  border: 1px solid #ddd;
+  border-radius: 4px; /* Reduced border radius */
+  font-size: 12px; /* Consistent font size */
+  color: #040404;
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+  color: #888;
+}
+
+.form-group input[type="file"] {
+  padding: 0;
+  border: none;
+  background: #f9f9f9;
+}
+
+.submit-button {
+  padding: 6px 12px; /* Reduced padding */
+  border: none;
+  border-radius: 4px; /* Reduced border radius */
+  background: #007bff;
+  color: #fff;
+  font-size: 12px; /* Reduced font size */
+  cursor: pointer;
+  transition: background 0.3s ease;
+  text-align: center;
+  margin-top: 10px; /* Reduced margin above the button */
+}
+
+.submit-button:hover {
+  background: #0056b3;
+}
+
+.submission-message {
+  margin-top: 10px; /* Reduced margin above message */
+  text-align: center;
+  color: #28a745;
+  font-size: 12px; /* Reduced font size */
+}

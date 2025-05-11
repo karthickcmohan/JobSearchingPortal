@@ -1,0 +1,172 @@
+/* Importing Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Montserrat:wght@400;700&display=swap');
+
+/* Container Styles */
+.about-container {
+  padding: 60px 30px;
+  max-width: 1700px;
+  margin: auto;
+  font-family: 'Roboto', sans-serif;
+  background-color: #3c5873;
+  color: #fbf8f8;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+}
+
+/* Header Styles */
+.about-header {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.about-header h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 3em;
+  color: #5fcbd7;
+  margin-bottom: 25px;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+}
+.about-header p{
+   
+    font-size:1.2em;
+}
+
+.banner-image {
+  width: 25%;
+  height: auto;
+  max-width: 800px;
+  border-radius: 12px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+  margin: 0 auto;
+}
+
+/* Content Section Styles */
+.about-content {
+  text-align: left;
+  line-height: 1.9;
+  color: #fffcfc;
+}
+
+.image-text-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.image-text-container.reverse {
+  flex-direction: row-reverse;
+}
+
+.text-content {
+  flex: 1;
+  padding: 0 20px;
+}
+
+.about-content h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2em;
+  color:#5fcbd7;
+  margin-top: 35px;
+  margin-bottom: 20px;
+  border-bottom: 2px solid #00509e;
+  padding-bottom: 5px;
+}
+
+.about-content p {
+  font-size: 1.2em;
+  margin-bottom: 25px;
+  color: #f7f3f3;
+}
+
+.about-content ul {
+  list-style-type: circle;
+  margin-left: 30px;
+  margin-bottom: 30px;
+}
+
+.about-content ul li {
+  margin-bottom: 12px;
+  font-size: 1.1em;
+}
+
+.about-image {
+  width: 40%;
+  height: auto;
+  max-width: 400px;
+  border-radius: 10px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Join Us Button Styles */
+.join-us {
+  text-align: center;
+}
+
+.join-us h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2em;
+  color: #5fcbd7;
+  margin-bottom: 15px;
+}
+
+.join-us p {
+  font-size: 1.2em;
+  margin-bottom: 30px;
+}
+
+.join-us-button {
+  display: inline-block;
+  padding: 15px 35px;
+  background-color: #0073e6;
+  color: white;
+  font-size: 1.1em;
+  text-transform: uppercase;
+  font-weight: bold;
+  border-radius: 50px;
+  box-shadow: 0 8px 15px rgba(0, 115, 230, 0.3);
+  transition: transform 0.3s, background-color 0.3s, box-shadow 0.3s;
+  text-decoration: none;
+  letter-spacing: 1px;
+}
+
+.join-us-button:hover {
+  background-color: #005bb5;
+  transform: translateY(-3px);
+  box-shadow: 0 12px 20px rgba(0, 91, 181, 0.4);
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+  .about-header h1 {
+    font-size: 2.5em;
+  }
+  
+  .about-content h2 {
+    font-size: 1.7em;
+  }
+  
+  .about-content p, 
+  .about-content ul li {
+    font-size: 1em;
+  }
+  
+  .about-content .join-us-button {
+    padding: 12px 30px;
+    font-size: 1em;
+  }
+
+  .image-text-container {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .image-text-container.reverse {
+    flex-direction: column-reverse;
+  }
+  
+  .about-image {
+    width: 80%;
+    max-width: 300px;
+  }
+}
